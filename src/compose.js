@@ -1,3 +1,7 @@
-const compose = (...args) => () => args.reduce((prev, next) => prev(next(...arguments)))
+function compose(...fns) {
+  return function fn(...args) {
+    return fns.reduce((prev, next) => prev(next(...args)))
+  }
+}
 
 module.exports = compose
