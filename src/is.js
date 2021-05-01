@@ -1,11 +1,8 @@
-const memorize = require('./memorize')
-
 function typeValidateCreator(type) {
   function typeValidator(target) {
     return Object.prototype.toString.call(target) === `[object ${type}]`
   }
-
-  return memorize(typeValidator)
+  return typeValidator
 }
 
 const isString = typeValidateCreator('String')
@@ -25,6 +22,7 @@ const isWeakMap = typeValidateCreator('WeakMap')
 const isWeakSet = typeValidateCreator('WeakSet')
 const isRegExp = typeValidateCreator('RegExp')
 const isWindow = typeValidateCreator('Window')
+const isError = typeValidateCreator('Error')
 
 module.exports = {
   isString,
@@ -43,5 +41,6 @@ module.exports = {
   isWeakMap,
   isWeakSet,
   isRegExp,
-  isWindow
+  isWindow,
+  isError
 }

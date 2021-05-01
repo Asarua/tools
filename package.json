@@ -5,10 +5,16 @@
   "license": "MIT",
   "author": "Asarua <asarua@icloud.com>",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest ./__tests__"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test && git add ."
+    }
   },
   "description": "some tools function",
   "devDependencies": {
+    "ghooks": "^2.0.4",
     "jest": "^26.6.3"
   }
 }
