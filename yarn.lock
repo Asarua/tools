@@ -3535,6 +3535,11 @@ urix@^0.1.0:
   resolved "https://registry.npmjs.org/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
+url2json-types@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/url2json-types/-/url2json-types-1.0.2.tgz#19936d899f626eb4109f7628532127180031a228"
+  integrity sha512-eOJhA4gnte6tsMTOKAaGNPVAZwOFBVogxtEG1mEsBGwXohoVMTsQdZ4dmqBE66I3jF58KvoiWCTtYgk7ebHt2g==
+
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.npmjs.org/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
