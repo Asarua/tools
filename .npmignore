@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+__tests__
+coverage
+jest.config.js
+yarn.lock
+.npmignore
+.gitignore
+
