@@ -1,7 +1,7 @@
 function deepClone(target) {
-  const isComplex = typeof target !== 'object' || typeof target !== 'function'
+  const notComplex = (val) => typeof val !== 'object' && typeof val !== 'function'
   if (
-    target === null || isComplex
+    target === null || notComplex(target)
   ) return target
 
   let obj = {}
@@ -11,10 +11,10 @@ function deepClone(target) {
 
   for (let prop in target) {
     if (target.hasOwnProperty(prop)) {
-      if (isComplex) {
-        obj[prop] = deepClone(target[prop])
-      } else {
+      if (notComplex(target[prop])) {
         obj[prop] = target[prop]
+      } else {
+        obj[prop] = deepClone(target[prop])
       }
     }
   }

@@ -13,4 +13,8 @@ describe('get params from url: ', () => {
   it('verify when name not in url: ', () => {
     expect(getUrlParams('a', 'baidu.com')).toBe('')
   })
+
+  it('verify when has name but don\'t has value: ', () => {
+    expect(getUrlParams('a', 'baidu.com?a=')).toBe('')
+  })
 })
