@@ -28,7 +28,7 @@ describe('check function with before: ', () => {
       return v + 1
     }
 
-    const func = before(fn, beforeFn, true)
+    const func = before(beforeFn, fn, true)
 
     expect(v).toBe('3')
     expect(func(v)).toBe('312')

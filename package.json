@@ -1,6 +1,6 @@
 {
   "name": "@asarua/tools",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "main": "./src/index.js",
   "types": "./types/index.d.ts",
   "license": "MIT",
@@ -8,6 +8,12 @@
   "scripts": {
     "test": "jest ./__tests__"
   },
+  "keywords": [
+    "tools",
+    "fp",
+    "curry",
+    "compose"
+  ],
   "config": {
     "ghooks": {
       "pre-commit": "npm run test && git add ."

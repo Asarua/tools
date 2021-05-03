@@ -1,4 +1,4 @@
-declare function assert(condition: boolean, msg?: string): void | Error
+declare function assert(condition: unknown, msg?: string): void | Error
 export {
   assert
 }

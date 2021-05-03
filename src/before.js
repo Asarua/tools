@@ -1,4 +1,4 @@
-function before(fn, beforeFn, isEffect) {
+function before(beforeFn, fn, isEffect) {
   return function(...args) {
     const val = beforeFn(...args)
     return isEffect

@@ -1,4 +1,4 @@
-declare function noop(): void
+declare function noop(...args: any[]): void
 export {
   noop
 }

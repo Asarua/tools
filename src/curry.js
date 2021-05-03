@@ -7,7 +7,9 @@ function curry(fn, ...initialState) {
     if (args.length < length) {
       return curried
     } else {
-      return fn(...args)
+      const val = fn(...args)
+      args.length = 0
+      return val
     }
   }
 }

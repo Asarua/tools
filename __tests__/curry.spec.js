@@ -6,10 +6,11 @@ describe('validate curried functions: ', () => {
     const verifyValue = val => {
       expect(val).toBe(add(1, 2, 3))
     }
+    const curried = curry(add)
 
-    verifyValue(curry(add)(1)(2)(3))
-    verifyValue(curry(add)(1, 2)(3))
-    verifyValue(curry(add)(1)(2, 3))
-    verifyValue(curry(add)(1, 2, 3))
+    verifyValue(curried(1)(2)(3))
+    verifyValue(curried(1, 2)(3))
+    verifyValue(curried(1)(2, 3))
+    verifyValue(curried(1, 2, 3))
   })
 })

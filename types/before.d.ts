@@ -1,6 +1,6 @@
 declare function before<B extends boolean = false, F = any, A = any>(
-  fn: (...args: B extends true ? A[] : any[]) => F,
   beforeFn: (...args: any[]) => A,
+  fn: (...args: B extends true ? A[] : any[]) => F,
   isEffect?: B
 ): F
 

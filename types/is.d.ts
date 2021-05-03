@@ -17,7 +17,7 @@ declare function isRegExp(val: unknown): val is RegExp
 declare function isWindow(val: unknown): val is Window
 declare function isError(val: unknown): val is Error
 
-declare const is = {
+export {
   isString,
   isBoolean,
   isNull,
@@ -36,8 +36,4 @@ declare const is = {
   isRegExp,
   isWindow,
   isError
-}
-
-export {
-  is
 }
